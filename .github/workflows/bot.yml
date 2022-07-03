@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: PixelOS-Releases/MaintainerBot
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
           path: MaintainerBot
       
       - name: Checkout Repo
