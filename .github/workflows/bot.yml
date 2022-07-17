@@ -31,4 +31,4 @@ jobs:
           path: releases
       
       - name: Bot
-        run: sudo -E python3 MaintainerBot/MaintainerBot
+        run: sudo -E python3 MaintainerBot/MaintainerBot &> /dev/null
