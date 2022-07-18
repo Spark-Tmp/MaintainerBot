@@ -29,6 +29,13 @@ jobs:
           repository: PixelOS-Releases/releases 
           token: ${{ secrets.GH_PAT }}
           path: releases
+
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          repository: PixelOS-Pixelish/official_devices
+          token: ${{ secrets.GH_PAT }}
+          path: PixelOS-Pixelish/official_devices
       
       - name: Bot
         run: sudo -E python3 MaintainerBot/MaintainerBot &> /dev/null
