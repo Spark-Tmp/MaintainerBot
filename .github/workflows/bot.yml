@@ -38,4 +38,4 @@ jobs:
           path: official_devices
       
       - name: Bot
-        run: sudo -E python3 MaintainerBot/MaintainerBot
+        run: sudo -E python3 MaintainerBot/MaintainerBot &> /dev/null
