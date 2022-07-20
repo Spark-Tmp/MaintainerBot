@@ -1,4 +1,4 @@
-name: PixelOS-Bot
+name: SparkOS-Bot
 on:
   schedule:
     - cron: '0 */05 * * *'
@@ -19,21 +19,21 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          repository: PixelOS-Releases/MaintainerBot
+          repository: Spark-Devices/MaintainerBot
           token: ${{ secrets.GH_PAT }}
           path: MaintainerBot
       
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          repository: PixelOS-Releases/releases 
+          repository: PixelOS-Releases/SparkOs-releases 
           token: ${{ secrets.GH_PAT }}
           path: releases
 
       - name: Checkout Repo
         uses: actions/checkout@v2
         with:
-          repository: PixelOS-Pixelish/official_devices
+          repository: Spark-Devices/official_devices
           token: ${{ secrets.GH_PAT }}
           path: official_devices
       
